@@ -1,0 +1,22 @@
+<h1>Display Page</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Repo Name</th>
+      <th>Description</th>
+      <th>Last Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @repositories.each do |r| %>
+      <tr>
+        <td><%= r[0] %></td>
+        <td><%= r[2] %></td>
+        <td><%= r[1] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div>Stuff was: <%= @repositories %></div>
